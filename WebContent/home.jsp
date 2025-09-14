@@ -35,13 +35,13 @@
 			#top{	
 				width:780px;
 				margin:30px auto;
-				border:1px colid #333;
+				border:1px solid #333;
 			}
 			
 			#header{
 				width:100%;	
-				height:500px;	
-				text-align:center;
+				height:80px;	
+				background-color:black;
 			}
 		
 			#main{
