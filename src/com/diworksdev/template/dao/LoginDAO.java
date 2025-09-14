@@ -3,6 +3,7 @@ package com.diworksdev.template.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
 import com.diworksdev.template.dto.LoginDTO;
 import com.diworksdev.template.util.DBConnector;
 
@@ -14,7 +15,6 @@ public class LoginDAO {
 		Connection connection=dbConnector.getConnection();
 		LoginDTO loginDTO=new LoginDTO();
 		String sql="SELECT * FROM login_user_transaction where login_id=? and login_pass=?";
-	}
 	
 	try{
 		PreparedStatement preparedStatement=connection.prepareStatement(sql);
@@ -32,9 +32,10 @@ public class LoginDAO {
 			if(resultSet.getString("login_id")!=null) {
 				loginDTO.setLoginFlg(true);
 			}
-		}catch(Exception e) {
-			e.printStackTrace();
 		}
-		return loginDTO;
+	}catch(Exception e) {
+		e.printStackTrace();
+	}
+	return loginDTO;
 	}
 }
