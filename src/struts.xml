@@ -21,13 +21,13 @@
 			<result name="error">home.jsp</result>
 		</action>
 		
-	<!-- 	
+		
 		<action name="UserCreateAction" 
 		class="com.diworksdev.template.action.UserCreateAction"
 		method="execute">
 			<result name="success">userCreate.jsp</result>
 		</action>
-		
+	<!-- 	
 		<action name="UserCreateConfirmAction" 
 		class="com.diworksdev.template.action.UserCreateConfirmAction"
 		method="execute">
