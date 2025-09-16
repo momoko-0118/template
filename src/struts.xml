@@ -40,7 +40,7 @@
 		method="execute">
 			<result name="success">userCreateComplete.jsp</result>
 		</action>
-		<!--
+		
 		<action name="BuyItemAction" 
 		class="com.diworksdev.template.action.BuyItemAction"
 		method="execute">
@@ -52,7 +52,7 @@
 		method="execute">
 			<result name="success">buyItemComplete.jsp</result>
 		</action>
-		
+		<!--
 		<action name="MyPageAction" 
 		class="com.diworksdev.template.action.MyPageAction"
 		method="execute">
